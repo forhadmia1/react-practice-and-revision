@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Blog from './Components/Blog/Blog';
+import Mobile from './Components/Mobile/Mobile';
+import Table from './Components/Table/Table';
+
+//apply css with object 
+const headingStyle = {
+  fontWeight:'bold',
+  textAlign:'center',
+  color:'green'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <article className='blog'>
+        <h2 style={headingStyle}>This is my first blog</h2>
+        <p style={{fontWeight:'bold',color:'salmon'}}>
+        Hello, I am learning react js for web development. I am the future web developer for your copmany and the freelance market. thaks
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </article>
+      <div className='article'>
+      <Blog heading="My heading" author="dev forhad"></Blog>
+      <Blog heading="My heading 2" author="dev forhad 2"></Blog>
+      <Blog heading="My heading 3" author="dev forhad 3"></Blog>
+      </div>
+      <Mobile></Mobile>
+      <div>
+        <Table></Table>
+      </div>
     </div>
   );
 }

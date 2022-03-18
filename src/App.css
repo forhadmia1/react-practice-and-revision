@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.blog{
+  background-color: aquamarine;
+  font-size: 20px;
+  border: 5px solid salmon;
+  border-radius: 10px ;
+  box-shadow: 5px 5px 10px  gray;
+  padding: 20px ;
+}
+.article{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
